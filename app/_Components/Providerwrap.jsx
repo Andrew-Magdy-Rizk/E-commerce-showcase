@@ -2,7 +2,7 @@
 import { Provider } from 'react-redux'
 import store from '../_RTK/store'
 
-function Providerwrap({children}) {
+function ProviderWrap({children}) {
   return (
     <Provider store={store}>
       {children}
@@ -10,4 +10,4 @@ function Providerwrap({children}) {
   )
 }
 
-export default Providerwrap;
+export default ProviderWrap;

@@ -1,6 +1,6 @@
 import { Roboto } from "next/font/google";
 import Footer from "./_Components/Footer";
-import Providerwrap from "./_Components/providerwrap";
+import ProviderWrap from "./_Components/ProviderWrap";
 import Header from "./_Components/Header";
 import "./globals.css";
 
@@ -19,11 +19,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
-        <Providerwrap>
+        <ProviderWrap>
           <Header />
           {children}
           <Footer />
-        </Providerwrap>
+        </ProviderWrap>
       </body>
     </html>
   );
