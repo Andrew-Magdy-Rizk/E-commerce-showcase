@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3b82f6",
+        secondary: "#d9224f",
       },
     },
   },
   plugins: [],
+  darkMode: "class",
 };
