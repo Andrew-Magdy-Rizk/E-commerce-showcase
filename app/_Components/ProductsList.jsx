@@ -1,16 +1,13 @@
 "use client"
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { useEffect, useState } from 'react';
-import { fetchProducts } from '../_RTK/slices/productsReducer';
 import Card from './Card';
 import SkelProductList from './SkelProductList';
 
-function ProductsList() {
+function ProductsList({products}) {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.products);
   const [page, setPage] = useState();
   useEffect(() => {
-    dispatch(fetchProducts());
     setPage(1);
   },[dispatch])
   
