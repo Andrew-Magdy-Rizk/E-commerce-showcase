@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <Provider store={store}>
-        <ProductsSection />
-      </Provider>
+      <ProductsSection />
     </div>
   );
 }

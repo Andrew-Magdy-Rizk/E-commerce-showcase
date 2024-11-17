@@ -15,7 +15,7 @@ function Cart() {
   }, 0);
   return (
     <>
-      <section className="py-24 min-h-[100vh] relative dark:bg-[#171717]">
+      <section className="py-24 min-h-[100vh] relative dark:bg-gray-900">
         <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
           <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black dark:text-white">
             Shopping Cart

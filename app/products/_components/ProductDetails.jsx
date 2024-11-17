@@ -103,7 +103,7 @@ function ProductDetails({productId}) {
                 </div>
                     <div className="flex items-center flex-col min-[400px]:flex-row gap-3 mb-3 min-[400px]:mb-8">
                         <div className=" flex items-center justify-center border border-gray-400 rounded-full">
-                            <button onClick={() => setQuantity(quantity + 1)}
+                            <button onClick={() => setQuantity(quantity > 1 ? quantity - 1 : quantity)}
                                 className="group py-[14px] px-3 w-full border-r border-gray-400 rounded-l-full h-full flex items-center justify-center bg-white shadow-sm shadow-transparent transition-all duration-300 hover:bg-gray-50 hover:shadow-gray-300">
                                 <svg className="stroke-black group-hover:stroke-black" width="22" height="22"
                                     viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
